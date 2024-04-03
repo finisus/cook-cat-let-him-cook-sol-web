@@ -16,6 +16,7 @@ body {
   background-color: white;
   color: black;
   font-family: 'cat';
+  overflow: hidden;
 }
 
 /* landing page */
@@ -35,7 +36,6 @@ body {
 }
 #close-landing-button {
   position: absolute;
-
   background-color: white;
   color: black;
   font-family: 'cat';
@@ -77,4 +77,70 @@ body {
   right: 0;
   bottom: 0;
   margin-right: -30px;
+}
+
+/* rotating cooking page */
+#cooking-page {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#rotation-container {
+  width: auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 0px;
+  animation-name: rotate;
+  animation-duration: 6.9s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#rotate-1 { width: auto; height: 120px; grid-column: 2 / 3; grid-row: 1 / 2; }
+#rotate-2 { width: auto; height: 130px; grid-column: 1 / 2; grid-row: 2 / 3; }
+#rotate-3 { width: auto; height: 130px; grid-column: 3 / 4; grid-row: 2 / 3; }
+@keyframes rotate{
+  from{ transform: rotate(-360deg); }
+  to{ transform: rotate(360deg); }
+}
+
+#loading-text {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 96.69px;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+#dot1, #dot2, #dot3 { 
+  font-size: 20px;
+  font-weight: 900;
+  animation-duration: 1s;
+  animation-timing-function: step-start;
+  animation-iteration-count: infinite;
+}
+#dot1 {
+  animation-name: fadeInOut;
+  animation-delay: 0.33s;
+}
+#dot2 {
+  animation-name: fadeInOut;
+  animation-delay: 0.66s;
+}
+#dot3 {
+  animation-name: fadeInOut;
+  animation-delay: 0.99s;
+}
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; }
+  25%, 75% { opacity: 1; }
 }
