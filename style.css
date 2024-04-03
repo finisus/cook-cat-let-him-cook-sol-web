@@ -1,0 +1,80 @@
+@font-face {
+  font-family: 'cat';
+  src: url(./metadata/Simplecat-d9xpV.otf);
+}
+
+.backdrop-shadow {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.0),
+                    0 22px 70px 4px rgba(0,0,0,0.44),
+                    0 0 0 1px rgba(0, 0, 0, 0.0);
+}
+
+/* let page take full height of viewport excess */
+html {height: 100%;} body {position: absolute; top: 0; bottom: 0; right: 0; left: 0;}
+
+body {
+  background-color: white;
+  color: black;
+  font-family: 'cat';
+}
+
+/* landing page */
+#landing-page {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+#close-landing-button {
+  position: absolute;
+
+  background-color: white;
+  color: black;
+  font-family: 'cat';
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-align: center;
+  border: 3px solid black;
+  padding: 4px 12px;
+  cursor: pointer;
+  z-index: 21;
+}
+#close-landing-button:hover {
+  background-color: black;
+  color: white;
+}
+#close-landing-button:active {
+  background-color: white;
+  color: black;
+}
+
+#landing-page .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#noCook-img {
+  width: 333px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#cryCat-img {
+  width: 269px;
+  height: auto;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-right: -30px;
+}
