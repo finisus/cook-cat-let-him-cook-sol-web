@@ -50,12 +50,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const buyBtn = document.getElementById('buy-button');
   buyBtn.addEventListener('click', function() {
-    window.open('', '_blank');
+    window.open('https://www.pump.fun/DPBDYMjVC5ZZEPBJCiZme7yWBUviE4MDwtTrxA1BGXRR', '_blank');
   });
 
   /* Copy button logic */
   const copyButton = document.getElementById('copy-ca-button');
-  const textToCopy = "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v";
+  const textToCopy = "DPBDYMjVC5ZZEPBJCiZme7yWBUviE4MDwtTrxA1BGXRR";
   copyButton.addEventListener("click", async () => {
     try {
       // Try the modern Clipboard API first (if supported)
