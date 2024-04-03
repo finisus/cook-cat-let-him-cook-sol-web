@@ -8,8 +8,6 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  
-
 
   <div id="landing-page" style="z-index: 20; display: none;">
     <div class="container"">
@@ -19,16 +17,30 @@
     <button id="close-landing-button" class="backdrop-shadow">Let him cook?</button>
   </div>
 
-  <div id="cooking-page" style="z-index: 20; display: flex;">
+  <div id="cooking-page" style="z-index: 20; display: none;">
     <div id="rotation-container">
       <img id="rotate-1" src="./metadata/photo_2024-04-03 6.09.19 PM.png">
       <img id="rotate-2" src="./metadata/photo_2024-04-03 6.09.23 PM.png">
       <img id="rotate-3" src="./metadata/photo_2024-04-03 6.09.26 PM.png">
     </div>
-
     <span id="loading-text">loading<span id="dot1">.</span><span id="dot2">.</span><span id="dot3">.</span></span>
   </div>
 
+  <div id="main-page" style="z-index: 10; display: flex;">
+    <img style="width: 222px;" src="./metadata/main-pfp-catWithSpatula.png">
+    <div id="contract-contaier">
+      <span id="contract-address">EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v</span>
+      <button id="copy-ca-button">Copy Contract</button>
+    </div>
+    <div style="display: flex; flex-direction: row; gap: 4px; justify-content: center; align-items: center;">
+      <button id="buy-button">Buy on pump.fun</button>
+      <button id="chart-button" style="display: none;">Dexscreener</button>
+    </div>
+    <div id="socials">
+      <button id="telegram-button">Telegram</button>
+      <button id="twitter-button">Twitter</button>
+    </div>
+  </div>
 
 </body>
 </html>
